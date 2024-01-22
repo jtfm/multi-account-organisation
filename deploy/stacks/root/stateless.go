@@ -1,6 +1,8 @@
 package root
 
 import (
+	"fmt"
+
 	"github.com/aws/aws-cdk-go/awscdk/v2"
 	"github.com/aws/constructs-go/constructs/v10"
 	"github.com/aws/jsii-runtime-go"
@@ -28,7 +30,7 @@ func StatelessStack(
 		stack,
 		jsii.String(outputName),
 		&awscdk.CfnOutputProps{
-			Value:      bucket.BucketArn(),
+			Value:      bucketArn,
 			ExportName: jsii.String(fmt.Sprintf("%s-%s", outputName, *stack.StackName())),
 		})
 

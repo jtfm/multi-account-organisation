@@ -6,7 +6,6 @@ import (
 	"github.com/aws/aws-cdk-go/awscdk/v2"
 	"github.com/aws/jsii-runtime-go"
 	"github.com/jtfm/multi-account-organisation.git/deploy/stacks/root"
-	"github.com/jtfm/multi-account-organisation.git/deploy/pkg/core_cdk"
 )
 
 func main() {
